@@ -1,3 +1,8 @@
+:root {
+  --transition-duration: 0.3s;
+  --transition-easing: ease-in-out;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,6 +104,15 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  transition: color var(--transition-duration) var(--transition-easing);
+}
+
+.contact-info__item:is(:hover, :focus) {
+  color: var(--text-decoration-color);
+}
+
+.contact-info__item:is(:hover, :focus) .contact-info__item-icon {
+  fill: var(--text-decoration-color);
 }
 
 .contact-info__item:not(:last-child) {
@@ -112,13 +126,10 @@ body {
   justify-content: center;
 }
 
-.contact-info__item-icon path {
-  fill: var(--icon-color);
-}
-
 .contact-info__item-icon {
-  height: 1.1428rem;
   vertical-align: text-bottom;
+  fill: var(--icon-color);
+  transition: fill var(--transition-duration) var(--transition-easing);
 }
 
 .contact-info__avatar {
