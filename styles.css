@@ -20,9 +20,6 @@ body {
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
 }
-ul {
-  list-style: none;
-}
 
 .container {
   margin: 0 auto;
@@ -187,6 +184,7 @@ ul {
   margin-bottom: 15px;
 }
 .skills__list {
+  list-style: none;
 }
 
 .skills__text {
