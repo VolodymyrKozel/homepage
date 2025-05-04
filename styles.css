@@ -154,11 +154,7 @@ body {
 }
 
 .intro__icon {
-  height: 1.1428rem;
   vertical-align: text-bottom;
-}
-
-.intro__icon path {
   fill: var(--text-decoration-color);
 }
 
