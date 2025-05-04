@@ -163,18 +163,35 @@ body {
   text-align: justify;
 }
 
+.skills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skills__column {
+  flex: 1 1 30%;
+  max-width: 250px;
+  min-width: 230px;
+  padding: 1rem;
+  border: 3px solid;
+  border-color: var(--text-decoration-color);
+}
+
 .skills__header {
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 15px;
 }
+.skills__list {
+  list-style: none;
+}
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
 }
 
-Experience and additional info styles .experiences {
+.experiences {
   flex: 1 1 60%;
   margin-right: 50px;
 }
